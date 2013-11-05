@@ -9,5 +9,7 @@ commands = {
 puts 'list of git commands:'
 
 commands.keys.sort.each do |command_name|
-    puts 'git ' + command_name + " is cool, it " + commands[command_name]
+    puts 'git ' + command_name +
+        " is cool, it " +
+        commands[command_name]
 end

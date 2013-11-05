@@ -7,10 +7,8 @@ commands = {
 }
 
 puts 'list of git commands:'
-sorted_commands = commands.keys
+sorted_commands = commands.keys.sort
 
-sorted_commands.sort.each do |command_name|
-    puts 'git ' + command_name +
-        " is very cool, it " +
-        commands[command_name]
+sorted_commands.each do |command_name|
+    puts 'git ' + command_name + " is very cool, it " + commands[command_name]
 end
